@@ -14,7 +14,7 @@ import java.util.LinkedList;
 public class UniqueArray {
     public static void main(String[] args) {
         int[] arr = {1,8,6,7,5,4,8,3,7};
-        int[] ans = UniqueArray.fun2(arr);
+        int[] ans = UniqueArray.fun3(arr);
         System.out.println(Arrays.toString(ans));
     }
 
@@ -37,6 +37,17 @@ public class UniqueArray {
             set.add(num);
         int[] res = set.stream().mapToInt(Integer::intValue).toArray();
         return res;
+    }
+    //this method is same as the previous one but it doesn't requir extra space
+    public static int[] fun3(int[] arr){
+        Arrays.sort(arr);
+        int i=0;
+        for(int j=1;j<arr.length;j++){
+            if(arr[i]!=arr[j]){
+                arr[++i]=arr[j];
+            }
+        }
+        return Arrays.copyOfRange(arr,0,i+1);
     }
 }
     
