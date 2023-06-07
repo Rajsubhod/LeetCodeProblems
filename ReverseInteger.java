@@ -1,3 +1,6 @@
+/*
+  Given a integer of int32 return the reverse and if the reverse excide the int32 range then return 0
+ */
 public class ReverseInteger {
     public static void main(String[] args){
         System.out.println(new ReverseInteger().reverse(1534236469));
