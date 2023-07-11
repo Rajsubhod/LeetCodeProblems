@@ -6,8 +6,6 @@
     Return the head of the merged linked list.
  */
 
-import java.util.Arrays;
-
 /**
  * Definition for singly-linked list.
  * public class ListNode {
