@@ -55,13 +55,6 @@ public class Merge_Two_Sorted_list {
         System.out.println();
         print(mergeTwoLists(list1,list2));
     }
-    public static boolean check(ListNode list1,ListNode list2){
-        if(list1.val<=list2.val){
-            return true;
-        }else{
-            return false;
-        }
-    }
     public static ListNode mergeTwoLists(ListNode list1, ListNode list2) {
         if(list1==null) {
             return list2;
