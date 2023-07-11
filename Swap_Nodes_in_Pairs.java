@@ -46,7 +46,7 @@ public class Swap_Nodes_in_Pairs {
           print((swapPairs(list)));
       }
     private static ListNode swapPairs(ListNode list) {
-        if(list==null){
+        if(list==null || list.next==null){
             return list;
         }
         ListNode head = list;
