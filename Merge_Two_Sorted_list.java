@@ -53,24 +53,30 @@ public class Merge_Two_Sorted_list {
         ListNode list2 = make(1,3,4);
         print(list2);
         System.out.println();
-        print(mergeTwoListsI(list1,list2));
+        print(mergeTwoLists(list1,list2));
+    }
+    public static boolean check(ListNode list1,ListNode list2){
+        if(list1.val<=list2.val){
+            return true;
+        }else{
+            return false;
+        }
     }
     public static ListNode mergeTwoLists(ListNode list1, ListNode list2) {
-        if(list1==null && list2==null){
-            return new ListNode(0);
+        if(list1==null) {
+            return list2;
         }
-        ListNode ans = new ListNode();
-        if(list2==null || list1.val<list2.val){
-           ans.next=list1;
-           ans=list1;
-           mergeTwoLists(list1.next, list2);
+        if(list2==null){
+            return list1;
+        }
+        if(list1.val<=list2.val){
+            list1.next=mergeTwoLists(list1.next, list2);
+            return list1;
         }
         else{
-           ans.next=list2;
-           ans=list2;
-           mergeTwoLists(list1.next, list2);
+            list2.next=mergeTwoLists(list1, list2.next);
+            return list2;
         }
-        return ans;
     }
     //Iterative Method --- Bad
     public static ListNode mergeTwoListsI(ListNode temp1, ListNode temp2) {
