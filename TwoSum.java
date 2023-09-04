@@ -5,6 +5,8 @@ class TwoSum {
     }
 
     private static char[] fun(int[] arr) {
+
+        
         return null;
     }
 }
