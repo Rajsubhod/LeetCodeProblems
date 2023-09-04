@@ -1,3 +1,4 @@
+//
 class TwoSum {
     public static void main(String[] args) {
         int[] arr={};
@@ -6,7 +7,7 @@ class TwoSum {
 
     private static char[] fun(int[] arr) {
 
-        
+
         return null;
     }
 }
