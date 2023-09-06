@@ -13,7 +13,7 @@ public class Split_Linked_List_in_parts {
         ListNode(int val) { this.val = val; }
         ListNode(int val, ListNode next) { this.val = val; this.next = next; }
       }
-      Printing LinkedList
+    //   Printing LinkedList
       public static void print(ListNode head){
           ListNode temp = head;
           while(temp!=null){
@@ -41,6 +41,7 @@ public class Split_Linked_List_in_parts {
 
     }
     private static ListNode[] splitListToParts(ListNode list, int k) {
+
         return null;
     }
 }
