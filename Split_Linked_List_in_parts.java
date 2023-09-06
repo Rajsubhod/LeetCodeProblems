@@ -32,12 +32,12 @@ public class Split_Linked_List_in_parts {
           }
           return node;     
       }
-    // public static void main(String[] args) {
-    //     ListNode list = make(1,2,3);
-    //     int k=5;
-    //     print(list);
-    //     System.out.println();
-    //     System.out.println(splitListToParts(list,k));
+    public static void main(String[] args) {
+        ListNode list = make(1,2,3);
+        int k=5;
+        print(list);
+        System.out.println();
+        System.out.println(splitListToParts(list,k));
 
     }
     private static ListNode[] splitListToParts(ListNode list, int k) {
