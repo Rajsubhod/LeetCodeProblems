@@ -5,6 +5,10 @@
 // The parts should be in the order of occurrence in the input list, and parts occurring earlier should always have a size greater than or equal to parts occurring later.
 
 // Return an array of the k parts.
+
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
 public class Split_Linked_List_in_parts {
     public static class ListNode {
         int val;
@@ -41,7 +45,18 @@ public class Split_Linked_List_in_parts {
 
     }
     private static ListNode[] splitListToParts(ListNode list, int k) {
-
+        ListNode temp=list;
+        int length=0;
+        while(temp!=null){
+            length++;
+            temp=temp.next;
+        }
+        temp=list;
+        ListNode[] res= new ListNode[k];
+        System.out.println(Arrays.toString(res));
+        while(length<=k){
+            // res[].next = ;
+        }
         return null;
     }
 }
