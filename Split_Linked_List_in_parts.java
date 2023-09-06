@@ -21,17 +21,17 @@ public class Split_Linked_List_in_parts {
               temp=temp.next;
           }
       }
-    //   //Making LinkedList
-    //   public static ListNode make(int... val){
-    //       if(val.length<=0){
-    //           return new ListNode();
-    //       }
-    //       ListNode node = new ListNode(val[val.length-1]);
-    //       for(int i=val.length-2;i>=0;i--){
-    //           node = new ListNode(val[i],node);
-    //       }
-    //       return node;     
-    //   }
+      //Making LinkedList
+      public static ListNode make(int... val){
+          if(val.length<=0){
+              return new ListNode();
+          }
+          ListNode node = new ListNode(val[val.length-1]);
+          for(int i=val.length-2;i>=0;i--){
+              node = new ListNode(val[i],node);
+          }
+          return node;     
+      }
     // public static void main(String[] args) {
     //     ListNode list = make(1,2,3);
     //     int k=5;
