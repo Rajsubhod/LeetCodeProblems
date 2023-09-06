@@ -13,14 +13,14 @@ public class Split_Linked_List_in_parts {
         ListNode(int val) { this.val = val; }
         ListNode(int val, ListNode next) { this.val = val; this.next = next; }
       }
-      //Printing LinkedList
-    //   public static void print(ListNode head){
-    //       ListNode temp = head;
-    //       while(temp!=null){
-    //           System.out.print(temp.val+" ");
-    //           temp=temp.next;
-    //       }
-    //   }
+      Printing LinkedList
+      public static void print(ListNode head){
+          ListNode temp = head;
+          while(temp!=null){
+              System.out.print(temp.val+" ");
+              temp=temp.next;
+          }
+      }
     //   //Making LinkedList
     //   public static ListNode make(int... val){
     //       if(val.length<=0){
