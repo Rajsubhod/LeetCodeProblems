@@ -54,8 +54,11 @@ public class Split_Linked_List_in_parts {
         temp=list;
         ListNode[] res= new ListNode[k];
         System.out.println(Arrays.toString(res));
-        while(length<=k){
-            // res[].next = ;
+        int i=k;
+        if(length<=i){
+            while(i!=0){
+                
+            }
         }
         return null;
     }
