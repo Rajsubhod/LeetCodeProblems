@@ -55,10 +55,7 @@ public class Split_Linked_List_in_parts {
         System.out.println(Arrays.toString(res));
         int i=k;
         if(length<=i){
-            while(i!=0){
-                
-                
-            }
+            
         }
         return null;
     }
