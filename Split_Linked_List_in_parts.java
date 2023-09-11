@@ -6,7 +6,6 @@
 
 // Return an array of the k parts.
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class Split_Linked_List_in_parts {
